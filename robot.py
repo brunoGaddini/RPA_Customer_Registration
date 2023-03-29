@@ -10,16 +10,16 @@ def cadastro_web(dataframe):
     # Logging in to the system
     browser = webdriver.Chrome()
     browser.maximize_window()
-    browser.get('http://automacao.empowerdata.com.br/')
+    browser.get('http:// link ')
     #time.sleep(2)
 
     email = browser.find_element(By.XPATH, '//*[@id="email"]')
-    email.send_keys('aluno@empowerdata.com.br')
+    email.send_keys('e-mail')
     #time.sleep(1)
     email.send_keys(Keys.TAB)
 
     login = browser.find_element(By.XPATH, '//*[@id="password"]')
-    login.send_keys('empowerpython')
+    login.send_keys('password')
 
     time.sleep(2)
 
